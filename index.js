@@ -101,7 +101,14 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
+reviews[8] = {
+  name: "Mike",
+  rating: 0,
+  feedback: "This place is disgusting! I found a clump of hair in my food!"
+}
 
+console.log(reviews)
+console.log(reviews[8])
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
