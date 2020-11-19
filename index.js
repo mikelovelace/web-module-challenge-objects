@@ -62,9 +62,17 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function(person) {
+    if(person != "public") {
+      return burger.price * 0.75
+    } else {
+      return burger.price * 0.90
+    }
+  }
 }
-
+console.log(burger.discount("teacher"))
+console.log(burger.discount("student"))
+console.log(burger.discount("public"))
 
 
 ///////////////Reviews (MVP)///////////////////
