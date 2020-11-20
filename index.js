@@ -180,7 +180,7 @@ Use the getReviewsByRating function below to do the following:
 3.  loop through the array
 4.  create a conditional that checks each index number of the array of objects to see if the rating number at that particular index is greater or equal to the specified number and less than rating number +1 which in this case is 5 or 4+1.
 5.  At every iteration of the loop, if the condition is met, push that particular result into the empty newArray
-6.  Invoke the function and pass ion the array of objects and the ratingNum (reviews, 4)
+6.  Invoke the function and pass in the array of objects and the ratingNum (reviews, 4)
 */
  function getReviewByRating(array, ratingNum) {
    let newArray = [];
