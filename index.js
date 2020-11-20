@@ -174,8 +174,22 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(array, rating) {
-
+/*
+1.  function takes an array of objects and a rating number
+2.  create a new array to hold the filtered results
+3.  loop through the array
+4.  create a conditional that checks each index number of the array of objects to see if the rating number at that particular index is greater or equal to the specified number and less than rating number +1 which in this case is 5 or 4+1.
+5.  At every iteration of the loop, if the condition is met, push that particular result into the empty newArray
+6.  Invoke the function and pass ion the array of objects and the ratingNum (reviews, 4)
+*/
+ function getReviewByRating(array, ratingNum) {
+   let newArray = [];
+   for(let i = 0; i < array.length; i++) {
+     if(array[i].rating >= ratingNum && array[i].rating < ratingNum+1) {
+       newArray.push(array[i])
+     }
+   }
+   return newArray
   }
 console.log(getReviewByRating(reviews, 4))
   
